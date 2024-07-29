@@ -18,14 +18,9 @@ $ python3 run_tests.py
 
 ## Basic Strategy
 
-If only 1 combination:
-    Take that
-If a combination uses all dice:
-    Take that
-Else:
-    Find the next combination by the highest percentage of score/number of dice ratio
-    If that would leave fewer than 4 dice:
-        Take max
-    else:
-        Take that
-
+If only 1 combination then choose that
+If a combination uses all dice then choose that.\
+Otherwise: \
+    Find the next combination by the highest percentage of score/number of dice ratio.\
+    If that would leave fewer than 4 dice choose the max.\
+    Otherwise take highest score/num_dice ratio.
