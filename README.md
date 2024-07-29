@@ -1,5 +1,5 @@
 # Ten Thousand
-
+An automation of the dice game [Ten Thousand](https://en.wikipedia.org/wiki/Dice_10000) for statistical analysis of different strategies.
 
 ## Running Locally 
 
@@ -16,15 +16,15 @@ $ python3 run_tests.py
 ```
 
 
-### Choosing which dice to take
+## Basic Strategy
 
 If only 1 combination:
     Take that
 If a combination uses all dice:
     Take that
 Else:
-    Find next by percentage of score to num_dice used
-    If that leaves fewer than 4 dice:
+    Find the next combination by the highest percentage of score/number of dice ratio
+    If that would leave fewer than 4 dice:
         Take max
     else:
         Take that
